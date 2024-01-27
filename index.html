@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Fruit Bucket</title>
+</head>
+<body>
+
+  <header class="container mx-auto py-3">
+       <h2 class="text-4xl text-center font-bold">All Flower Card</h2>
+
+  </header>
+
+  <main id="modal" class="container mx-auto py-3">
+
+      <div class="flex flex-col md:flex-row gap-4">
+        <div class=" w-full md:w-9/12 grid grid-col md:grid-cols-2 lg:grid-cols-3 gap-6 px-[4%] md:px-[0%]">
+
+          <div class="w-full shadow-md rounded">
+              <img class="w-full h-60" src="https://i.ibb.co/Wpv2ypg/Black-Apple-1-1000.jpg" alt="">
+            <div class="p-4">
+              <h2 class="text-2xl font-bold py-1">Apple</h2>
+              <p class="pb-2">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <h4 class="text-lg font-semibold py-1">Price : <span>50</span>$</h4>
+              <button class="bg-red-500 px-6 py-2 rounded text-white" onclick="addToCard(this)">Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="w-full shadow-md rounded">
+              <img class="w-full h-60" src="https://i.ibb.co/SVzKhQV/istockphoto-1314353618-612x612.jpg" alt="">
+            <div class="p-4">
+              <h2 class="text-2xl font-bold py-1">Orange</h2>
+              <p class="pb-2">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <h4 class="text-lg font-semibold py-1">Price : <span>30</span>$</h4>
+              <button class="bg-red-500 px-6 py-2 rounded text-white" onclick="addToCard(this)">Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="w-full shadow-md rounded">
+              <img class="w-full h-60" src="https://i.ibb.co/JFL5pwt/no-perennial-yes-hybrid-strawberry-guava-a6-1-elite-green-original-imagfw55euytyqx7.webp" alt="">
+            <div class="p-4">
+              <h2 class="text-2xl font-bold py-1">Guava</h2>
+              <p class="pb-2">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <h4 class="text-lg font-semibold py-1">Price : <span>20</span>$</h4>
+              <button class="bg-red-500 px-6 py-2 rounded text-white" onclick="addToCard(this)">Add To Cart</button>
+            </div>
+          </div>
+
+
+
+        </div>
+
+        <div class="w-full md:w-3/12 md:pl-6 px-[4%] px-[0%]">
+          <h2 class="text-3xl font-bold pb-2">Total Product details</h2>
+          <div id="insertArea" class="pb-2">
+
+          </div>
+          <h3 class="border-t-2 pt-1 font-xl font-semibold">Total Price <span id="totalPrice">0</span>$</h3>
+        </div>
+      
+      </div>
+
+
+    
+  </main>
+
+
+     
+        <script src="./script.js"></script>
+</body>
+</html>
